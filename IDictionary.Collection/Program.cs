@@ -1,6 +1,10 @@
-﻿using static System.Console;
+﻿using System.Collections;
+using static System.Console;
 
-Dictionary<int, string> employees = new Dictionary<int, string>();
+Dictionary<int, string> employees = new();
+
+IDictionary<int, string> iDick = new Dictionary<int, string>();
+
 
 static string RandomName()
 {
@@ -15,9 +19,17 @@ static string RandomName()
 for (int i = 0; i < 25; i++)
 {
     employees.Add(i,RandomName());
+    iDick.Add(i,RandomName());
 }
 
-foreach (var emp in employees)
+//foreach (var emp in employees)
+//{
+//    WriteLine("Employee Id : {0}, Employee Name {1}", emp.Key, emp.Value);
+//}
+
+foreach (var i in iDick)
 {
-    WriteLine("Employee Id : {0}, Employee Name {1}", emp.Key, emp.Value);
+    WriteLine("Employee Id : {0}, Employee Name {1}", i.Key, i.Value);
 }
+
+ReadKey();
