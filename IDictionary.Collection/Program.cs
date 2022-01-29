@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using static System.Console;
+﻿using static System.Console;
 
 Dictionary<int, string> employees = new();
 
