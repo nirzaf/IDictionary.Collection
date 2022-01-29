@@ -27,7 +27,7 @@ for (int i = 0; i < 25; i++)
 //    WriteLine("Employee Id : {0}, Employee Name {1}", emp.Key, emp.Value);
 //}
 
-foreach (var i in iDick)
+foreach (var i in iDick.Reverse())
 {
     WriteLine("Employee Id : {0}, Employee Name {1}", i.Key, i.Value);
 }
